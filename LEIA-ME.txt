@@ -1,0 +1,19 @@
+MONITOR BAUDELAIRE - GitHub gratuito (experimental)
+
+1. No GitHub, crie um repositório PUBLICO chamado baudelaire-monitor.
+2. Abra o repositório > Add file > Upload files.
+3. Arraste o CONTEÚDO desta pasta (incluindo a pasta .github), não o arquivo ZIP.
+4. Confirme em Commit changes.
+5. Settings > Pages > Build and deployment > Source = GitHub Actions.
+6. Actions > Verificar Baudelaire > Run workflow > Run workflow.
+7. Quando a execução terminar, Settings > Pages mostra a URL pública.
+
+IMPORTANTE: o iFood pode bloquear as verificações. Nesse caso, o painel mostrará INDETERMINADO.
+O GitHub agenda a cada 5 minutos, mas pode atrasar. Se a loja abrir por menos tempo, o alerta pode falhar.
+
+Telegram (opcional): crie seu próprio bot no BotFather, inicie conversa com ele e descubra seu chat id.
+Em Settings > Secrets and variables > Actions, crie dois Repository secrets:
+TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID. Nunca publique esses dados nos arquivos.
+Só dispara aviso de POSSIVEL_ABERTURA quando há mudança de status (e a classificação pode falhar).
+
+Atenção: repositórios públicos e seu histórico são visíveis a qualquer pessoa.
